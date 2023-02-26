@@ -1,0 +1,30 @@
+{
+  "name": "@prt-ts/filter-expreression-eval",
+  "version": "1.0.0-rc-1.0.1",
+  "description": "Package is written to evaluate complex dynamic filter expreression for typescript array of objects and return the copy of results",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "helper",
+    "ts",
+    "filter",
+    "filter-helper",
+    "npm package",
+    "filter-expression",
+    "expression"
+  ],
+  "author": "Pradeep Raj Thapaliya",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
