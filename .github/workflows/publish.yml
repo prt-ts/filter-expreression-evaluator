@@ -13,8 +13,17 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-      - name: Install dependencies and build 🔧
-        run: npm i && npx tsc
+      - name: Install Dependencies
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
+      - name: build Project Using Typescript 🔧
+        run: npx tsc
       - name: Publish package on NPM 📦
         run: npm publish
         env:
